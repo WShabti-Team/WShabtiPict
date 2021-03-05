@@ -20,7 +20,7 @@ Install [cygwin](http://www.cygwin.com/) and clone this repo into your home fold
 
 ## Usage Sample
 
-``` bash
+```bash
 ./WShabtiPict
 SourceCode Path: ClassExample/Calcolatrice.java
 
