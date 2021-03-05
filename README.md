@@ -21,7 +21,7 @@ Install [cygwin](http://www.cygwin.com/) and clone this repo into your home fold
 OR
 
 Use WSL (Windows Subsystem for Linux) to execute in linux environment without installing cygwin.
-For compilation you need build-essential and make
+To compile you need to install build-essential and make
 
 ```raw
 apt install build-essential
