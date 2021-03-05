@@ -24,8 +24,8 @@ Use WSL (Windows Subsystem for Linux) to execute in linux environment without in
 To compile you need to install build-essential and make
 
 ```raw
-apt install build-essential
-apt install make
+sudo apt install build-essential
+sudo apt install make
 ```
 
 
