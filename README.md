@@ -18,6 +18,17 @@ make
 ## Building on Windows
 Install [cygwin](http://www.cygwin.com/) and clone this repo into your home folder. Run `make` to build the `pict` binary.
 
+OR
+
+Use WSL (Windows Subsystem for Linux) to execute in linux environment without installing cygwin.
+For compilation you need build-essential and make
+
+```raw
+apt install build-essential
+apt install make
+```
+
+
 ## Usage Sample
 
 ```raw
