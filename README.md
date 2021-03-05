@@ -16,7 +16,7 @@ make
 ```
 
 ## Building on Windows
-Install [cygwin](http://www.cygwin.com/) and clone this repo into your home folder. Run `make` to build the `pict` binary.
+Install [cygwin](http://www.cygwin.com/) and clone this repo into your home folder. Run `make` to build the binary.
 
 OR
 
