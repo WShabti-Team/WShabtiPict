@@ -7,7 +7,7 @@ A simple tool for combinatorial test cases and **JUnit5** code generation.
 Install clang through your package manager (most systems), Xcode (OS/X), or from the [LLVM website](http://llvm.org/releases/).
 On Linux, you also need to install recent libstdc++ offered by gcc 5.
 
-Run `make` to build the binary.
+Run `make` to build the `WShabtiPict` binary.
 
 
 
@@ -16,7 +16,7 @@ make
 ```
 
 ## Building on Windows
-Install [cygwin](http://www.cygwin.com/) and clone this repo into your home folder. Run `make` to build the binary.
+Install [cygwin](http://www.cygwin.com/) and clone this repo into your home folder. Run `make` to build the `WShabtiPict` binary.
 
 OR
 
