@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <algorithm>
 #include <filesystem>
+#include <cassert>
 
 #include "../wshabtilib/java-source-code-parser/java-source-code-parser.h"
 #include "../wshabtilib/case-test-generator/case-test-generator.h"
@@ -31,10 +32,7 @@ int main(int argc, char** argv)
     bool is_interactive = true;
     string source_code_path = "";
 
-    if(argc != 1)
-    {
-        is_interactive = false;
-    }
+    if(argc != 1)   {  is_interactive = false; }
 //----------------------------------------------------------------------------------------------------------------------------------------------------
 
     if(is_interactive)
@@ -178,6 +176,9 @@ int main(int argc, char** argv)
             int k_degree = 0;
             cin>>k_degree;
 
+            bool is_k_degree_out_of_bound = ((k_degree) > 0) && ((k_degree) <= method_and_values.size());
+            assert(("K_DEGREE IS INCORRECT!",is_k_degree_out_of_bound));
+
             test_generator(k_degree, PARAMETER_FILE, TEST_CASE_FILE);
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -230,6 +231,9 @@ int main(int argc, char** argv)
         vector<string> all_prototypes = get_prototypes(source_code_path);
         string prototype;
 
+        bool is_out_of_bound = ((stoi(PARAMETER)) > 0) && ((stoi(PARAMETER)) <= all_prototypes.size());
+        assert(("INDEX OF METHOD TO TEST IS INCORRECT!",is_out_of_bound));
+
         //TAKE THE METHOD TO TEST
         prototype = all_prototypes[stoi(PARAMETER)-1];
 
@@ -258,6 +262,9 @@ int main(int argc, char** argv)
                 source.close();
                 dest.close();
             //---------COPY INPUT FILE IN THE OUTPUT DIRECTORY---------//
+
+            bool is_k_degree_out_of_bound = (stoi(K_DEGREE) > 0) && (stoi(K_DEGREE) <= (get_method_and_values_name(prototype).size()-1));
+            assert(("K_DEGREE IS INCORRECT!",is_k_degree_out_of_bound));
 
             test_generator(stoi(K_DEGREE), PARAMETER_FILE, TEST_CASE_FILE);
             cout<<"Your test cases for \""<<prototype<<"\" have been generated, please check tmp/test_case.csv"<<endl;
