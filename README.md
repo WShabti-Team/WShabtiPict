@@ -96,7 +96,8 @@ Your tests have been generated, please check JUnitTests/Calcolatrice/
 ```
 
 ## Usage Sample (Automatic)
-![User usage diagram](https://user-images.githubusercontent.com/58850712/110207515-3b439600-7e84-11eb-9700-bf33e95b5874.png)
+![User usage diagram](https://user-images.githubusercontent.com/58850712/110207546-780f8d00-7e84-11eb-9fd6-87648ed6994f.jpg)
+
 
 **Mode = TestGenerator [-t]**
 ```raw
