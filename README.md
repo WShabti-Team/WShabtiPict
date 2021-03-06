@@ -29,7 +29,7 @@ sudo apt install make
 ```
 
 
-## Usage Sample
+## Usage Sample (Interactive)
 
 ```raw
 ./WShabtiPict
@@ -96,6 +96,7 @@ Your tests have been generated, please check JUnitTests/Calcolatrice/
 ```
 
 ## Usage Sample (Automatic)
+![User usage diagram](https://user-images.githubusercontent.com/58850712/110207515-3b439600-7e84-11eb-9700-bf33e95b5874.png)
 
 **Mode = TestGenerator [-t]**
 ```raw
