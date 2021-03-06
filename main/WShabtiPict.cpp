@@ -214,6 +214,7 @@ int main(int argc, char** argv)
 
     //CONCLUSION
     cout<<endl<<"Your tests have been generated, please check JUnitTests/"+class_name+"/"<<endl;
+    cout<<"WARNING: Default constructor is used for class "<<class_name<<". If needed, complete it in the code."<<endl;
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------
     }
@@ -297,6 +298,7 @@ int main(int argc, char** argv)
             prototype_tested.push_back(prototype);
             test_source_code_generate(source_code_path, "./JUnitTests/"+class_name+"/", class_name, prototype_tested);
             cout<<"Your test has been generated, please check JUnitTests/"+class_name+"/"<<endl;
+            cout<<"WARNING: Default constructor is used for class "<<class_name<<". If needed, complete it in the code."<<endl;
         }
     }
     

@@ -61,7 +61,7 @@ string method_test_case_generate(string input_file_path, string method_prototype
     string init_of_method_test = "\n\n\t@ParameterizedTest"
                                  "\n\t@CsvFileSource(resources = \"./" + method_name + "_test.csv\")"
                                  "\n\tpublic void test_" + method_name + add_oracle_to_arguments(prototype_arguments, interval_found) + "{";
-    string body_of_method_test = "\n\t\t" + class_name + " " + class_name + "Test = new " + class_name + "();";
+    string body_of_method_test = "\n\t\t" + class_name + " " + class_name + "Test = new " + class_name + "(/*constructor arguments*/);";
     
     string assert_of_method_test = "";
 
