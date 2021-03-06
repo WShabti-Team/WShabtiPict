@@ -95,6 +95,26 @@ divisione(20,1): 20
 Your tests have been generated, please check JUnitTests/Calcolatrice/
 ```
 
+## Usage Sample (Automatic)
+
+**Mode = TestGenerator [-t]**
+```raw
+./WShabtiPict -t <INPUT_JAVA_CLASS> <INDEX_OF_METHOD_TO_TEST> <INPUT_VALUES_FILE> <K_DEGREE> 
+./WShabtiPict -t ClassExample/Calcolatrice.java 2 divisione_input.txt 2
+```
+
+**Mode = OracleGenerator [-o]**
+```raw
+./WShabtiPict -o <INPUT_JAVA_CLASS> <INDEX_OF_METHOD_TESTED> <TEST_INPUT_FILE> 
+./WShabtiPict -o ClassExample/Calcolatrice.java 2 ./tmp/test_case.csv
+```
+
+**Mode = JUnitTestCaseGenerator [-j]**
+```raw
+./WShabtiPict -o <INPUT_JAVA_CLASS> <INDEX_OF_METHOD_TESTED> <TEST_WITH_ORACLES_INPUT_FILE> 
+./WShabtiPict -j ClassExample/Calcolatrice.java 2 JUnitTests/Calcolatrice/divisione_test.csv 
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
