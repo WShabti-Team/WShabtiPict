@@ -87,6 +87,7 @@ divisione(5,1): 5
 divisione(20,1): 20
 
 Your tests have been generated, please check JUnitTests/Calcolatrice/
+WARNING: Default constructor is used for class Calcolatrice. If needed, complete it in the code.
 ```
 
 ## Usage Sample (Automatic)
