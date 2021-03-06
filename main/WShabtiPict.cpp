@@ -260,7 +260,7 @@ int main(int argc, char** argv)
             //---------COPY INPUT FILE IN THE OUTPUT DIRECTORY---------//
 
             test_generator(stoi(K_DEGREE), PARAMETER_FILE, TEST_CASE_FILE);
-            cout<<"Your tests have been generated, please check tmp/test_case.csv"<<endl;
+            cout<<"Your test cases for \""<<prototype<<"\" have been generated, please check tmp/test_case.csv"<<endl;
         }
         
         else if(mode.compare(ORACLE_GENERATION_MODE) == 0)
