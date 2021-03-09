@@ -14,12 +14,14 @@ Install [cygwin](http://www.cygwin.com/) and clone this repo into your home fold
 
 OR
 
-Use WSL (Windows Subsystem for Linux) to execute in linux environment without installing cygwin.
+Use WSL (Windows Subsystem for Linux) (link [here](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab)) to execute in linux environment without installing cygwin.
 To compile you need to install build-essential and make
 
 ```raw
+sudo apt update
 sudo apt install build-essential
 sudo apt install make
+sudo apt upgrade
 ```
 
 
