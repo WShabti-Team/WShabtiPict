@@ -5,7 +5,7 @@ A simple tool for combinatorial test cases and **JUnit5** code generation.
 
 ## Building with clang++ on Linux, OS/X, *BSD, etc.
 Install clang through your package manager (most systems), Xcode (OS/X), or from the [LLVM website](http://llvm.org/releases/).
-On Linux, you also need to install recent libstdc++ offered by gcc 5.
+On Linux, you also need to install recent libstdc++ offered by gcc 5 and c++2a offered by g++-9.
 
 Run `make` to build the `WShabtiPict` binary.
 
@@ -23,6 +23,8 @@ sudo apt install build-essential
 sudo apt install make
 sudo apt upgrade
 ```
+
+If you are using **Ubuntu 18.4 or older** you need to install **g++-9**
 
 
 ## Usage Sample (Interactive)
